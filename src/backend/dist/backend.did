@@ -1,0 +1,32 @@
+type http_request_result = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type http_header = 
+ record {
+   name: text;
+   value: text;
+ };
+type TransformationOutput = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type TransformationInput = 
+ record {
+   context: blob;
+   response: http_request_result;
+ };
+type Message = 
+ record {
+   content: text;
+   role: text;
+ };
+service : {
+  sendAIMessage: (messages: vec Message) -> (text);
+  /// Transform callback required by the IC HTTP outcall system.
+  transform: (input: TransformationInput) -> (TransformationOutput) query;
+}

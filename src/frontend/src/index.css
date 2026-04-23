@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Cormorant Garamond", serif;
+    --font-body: "Outfit", sans-serif;
+    --font-mono: "DM Mono", monospace;
+    --radius: 0.625rem;
+
+    --background: 0.03 0 0;
+    --foreground: 0.94 0.01 280;
+    --card: 0.08 0.01 280;
+    --card-foreground: 0.94 0.01 280;
+    --popover: 0.1 0.01 280;
+    --popover-foreground: 0.94 0.01 280;
+
+    --primary: 0.75 0.22 49;
+    --primary-foreground: 0.1 0.01 280;
+
+    --secondary: 0.15 0.01 280;
+    --secondary-foreground: 0.85 0.02 280;
+    --muted: 0.42 0.01 280;
+    --muted-foreground: 0.6 0.01 280;
+
+    --accent: 0.75 0.22 49;
+    --accent-foreground: 0.1 0.01 280;
+
+    --destructive: 0.65 0.25 22;
+    --destructive-foreground: 0.98 0 0;
+
+    --border: 0.3 0.01 280;
+    --input: 0.15 0.01 280;
+    --ring: 0.75 0.22 49;
+
+    --chart-1: 0.5 0.27 264;
+    --chart-2: 0.65 0.17 162;
+    --chart-3: 0.7 0.18 149;
+    --chart-4: 0.6 0.2 304;
+    --chart-5: 0.65 0.22 22;
+
+    --sidebar: 0.08 0.01 280;
+    --sidebar-foreground: 0.94 0.01 280;
+    --sidebar-primary: 0.75 0.22 49;
+    --sidebar-primary-foreground: 0.1 0.01 280;
+    --sidebar-accent: 0.15 0.01 280;
+    --sidebar-accent-foreground: 0.85 0.02 280;
+    --sidebar-border: 0.2 0.01 280;
+    --sidebar-ring: 0.75 0.22 49;
+  }
+
+  .dark {
+    --background: 0.03 0 0;
+    --foreground: 0.94 0.01 280;
+    --card: 0.08 0.01 280;
+    --card-foreground: 0.94 0.01 280;
+    --popover: 0.1 0.01 280;
+    --popover-foreground: 0.94 0.01 280;
+
+    --primary: 0.75 0.22 49;
+    --primary-foreground: 0.1 0.01 280;
+
+    --secondary: 0.15 0.01 280;
+    --secondary-foreground: 0.85 0.02 280;
+    --muted: 0.42 0.01 280;
+    --muted-foreground: 0.6 0.01 280;
+
+    --accent: 0.75 0.22 49;
+    --accent-foreground: 0.1 0.01 280;
+
+    --destructive: 0.65 0.25 22;
+    --destructive-foreground: 0.98 0 0;
+
+    --border: 0.3 0.01 280;
+    --input: 0.15 0.01 280;
+    --ring: 0.75 0.22 49;
+
+    --chart-1: 0.5 0.27 264;
+    --chart-2: 0.65 0.17 162;
+    --chart-3: 0.7 0.18 149;
+    --chart-4: 0.6 0.2 304;
+    --chart-5: 0.65 0.22 22;
+
+    --sidebar: 0.08 0.01 280;
+    --sidebar-foreground: 0.94 0.01 280;
+    --sidebar-primary: 0.75 0.22 49;
+    --sidebar-primary-foreground: 0.1 0.01 280;
+    --sidebar-accent: 0.15 0.01 280;
+    --sidebar-accent-foreground: 0.85 0.02 280;
+    --sidebar-border: 0.2 0.01 280;
+    --sidebar-ring: 0.75 0.22 49;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Outfit", sans-serif;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "overview": "ZEN Digital is a premium affiliate marketing platform dashboard for DAKESH KASHYAP, Founder & CEO. Features an age-gated entry, luxury dark gold UI, live analytics, a 10,000-affiliate leaderboard, AI chat powered by Claude, and a full founder control panel.",
+  "features": [
+    "18+ age gate with date-of-birth verification",
+    "Dashboard with revenue stats, bar chart, live transactions, package performance",
+    "4 subscription packages (Starter, Pro, Business, Enterprise)",
+    "Paginated 10,000-affiliate leaderboard with search and jump-to-rank",
+    "ZEN AI chat powered by Anthropic Claude via backend http-outcalls",
+    "Founder & Admin control panel with sub-sections",
+    "Full Privacy Policy page with compliance badges",
+    "Dark luxury theme with gold accents and premium typography"
+  ],
+  "category": "business-analytics",
+  "tags": [
+    "affiliate",
+    "dashboard",
+    "analytics",
+    "luxury",
+    "dark-theme",
+    "ai-chat",
+    "leaderboard"
+  ],
+  "last_updated": "2026-04-22T20:23:07.373Z"
+}
